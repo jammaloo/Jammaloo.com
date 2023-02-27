@@ -16,16 +16,19 @@
 .outer-frame {
     border: 1em solid var(--dark);
     background: var(--dark);
+    display: inline-block;
 }
 
 .inner-frame {
     border: 0.25em dashed var(--light);
     background: var(--bg);
+    display: inline-block;
 }
 
 .inner-inner-frame {
     border: 1em solid var(--dark);
     background: var(--light);
+    display: inline-block;
 }
 
 .picture {
