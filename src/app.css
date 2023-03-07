@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: var(--bg);
+    background: var(--bg) url('bg.png') repeat;
     color: var(--dark);
 }
 
