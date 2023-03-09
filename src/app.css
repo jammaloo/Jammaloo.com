@@ -7,7 +7,7 @@
 }
 
 body {
-	background: var(--bg) url('bg.png') repeat;
+	background: var(--bg) url('/bg.png') repeat;
 	color: var(--dark);
 }
 
