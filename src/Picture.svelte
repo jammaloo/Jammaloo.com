@@ -1,10 +1,22 @@
 <script>
 export let padding = true;
 
+const borderTypes = [
+    'dashed',
+    'dotted',
+    'double',
+    'inset',
+    'outset',
+    'ridge',
+    'solid',
+];
+
+const borderType = borderTypes[Math.floor(Math.random() * borderTypes.length)];
+
 </script>
 
 <div class="outer-frame">
-    <div class="inner-frame">
+    <div class="inner-frame" style={`border-style: ${borderType}`}>
         <div class="inner-inner-frame">
             <div class="picture" class:padding={padding}>
                 <slot />
