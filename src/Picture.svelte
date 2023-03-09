@@ -1,11 +1,12 @@
 <script>
+export let padding = true;
 
 </script>
 
 <div class="outer-frame">
     <div class="inner-frame">
         <div class="inner-inner-frame">
-            <div class="picture">
+            <div class="picture" class:padding={padding}>
                 <slot />
             </div>
         </div>
@@ -32,10 +33,13 @@
 }
 
 .picture {
-    border: 2em solid var(--light);
-    background: var(--bg);
+    border: 1.5em solid var(--light);
+    background: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.padding {
+    padding: 1em;
 }
 </style>
